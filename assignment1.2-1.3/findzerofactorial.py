@@ -1,4 +1,4 @@
-x =  10
+x =  7
 def findzero(x):
     factorial = 1
     count = 0
@@ -7,10 +7,9 @@ def findzero(x):
     factorial = str(factorial)
     print("facetorial ="+factorial)
     for i in factorial[::-1]:
-        if i == "0":
-            count+=1
-        else:
+        if i != "0":
             break
+        count+=1
     return count
 
 print("zero count = "+str(findzero(x)))
